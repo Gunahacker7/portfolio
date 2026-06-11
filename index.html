@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gunasekar E — Retail Leadership Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0D1B2A;--deep:#1A2E44;--blue:#1B4F8A;--gold:#C9A84C;--gold-light:#E8C97A;--cream:#F5F0E8;--white:#fff;--muted:#8A9BB0;--card-bg:#152235;--border:rgba(201,168,76,0.22)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--navy);color:var(--cream);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.1rem 4rem;background:rgba(13,27,42,0.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.25rem;color:var(--gold);letter-spacing:.02em}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:var(--muted);font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+
+/* HERO */
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:8rem 4rem 4rem;position:relative;overflow:hidden;gap:3rem}
+.hero-glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(201,168,76,.07) 0%,transparent 70%);top:10%;right:-100px;pointer-events:none}
+.hero-line{position:absolute;left:0;bottom:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.hero-eyebrow{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+.hero-name{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,5vw,4.2rem);line-height:1.1;color:var(--white);margin-bottom:.6rem}
+.hero-name span{color:var(--gold);font-style:italic}
+.hero-role{font-size:1rem;color:var(--muted);margin-bottom:1.8rem;font-weight:400;line-height:1.5}
+.hero-summary{font-size:.9rem;line-height:1.75;color:rgba(245,240,232,.75);margin-bottom:2rem;max-width:480px}
+.hero-cta-row{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-gold{padding:.65rem 1.6rem;background:var(--gold);color:var(--navy);border:none;border-radius:4px;font-weight:600;font-size:.82rem;letter-spacing:.05em;cursor:pointer;transition:opacity .2s,transform .15s}
+.btn-gold:hover{opacity:.88;transform:translateY(-1px)}
+.btn-outline{padding:.65rem 1.6rem;background:transparent;color:var(--gold);border:1px solid var(--gold);border-radius:4px;font-weight:500;font-size:.82rem;letter-spacing:.05em;cursor:pointer;transition:background .2s,color .2s}
+.btn-outline:hover{background:var(--gold);color:var(--navy)}
+.hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.stat-card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:1.4rem 1.2rem}
+.stat-num{font-family:'Playfair Display',serif;font-size:2.6rem;color:var(--gold);line-height:1}
+.stat-label{font-size:.75rem;color:var(--muted);margin-top:.3rem;letter-spacing:.05em}
+.stat-desc{font-size:.78rem;color:rgba(245,240,232,.55);margin-top:.2rem}
+
+/* SECTION BASE */
+section{padding:5rem 4rem}
+.section-eyebrow{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem;font-weight:500}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.5rem);color:var(--white);margin-bottom:.5rem}
+.section-rule{width:48px;height:2px;background:var(--gold);margin-bottom:2.5rem}
+
+/* ABOUT */
+.about{background:var(--deep)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.about-text p{color:rgba(245,240,232,.78);font-size:.93rem;line-height:1.8;margin-bottom:1.2rem}
+.contact-list{list-style:none;display:flex;flex-direction:column;gap:.7rem;margin-top:1.5rem}
+.contact-list li{display:flex;align-items:center;gap:.8rem;font-size:.85rem;color:var(--muted)}
+.contact-list li span{color:var(--cream)}
+.contact-icon{width:32px;height:32px;background:rgba(201,168,76,.1);border:1px solid var(--border);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-icon svg{width:14px;height:14px;stroke:var(--gold);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.skill-pill{background:rgba(201,168,76,.08);border:1px solid var(--border);border-radius:4px;padding:.5rem .85rem;font-size:.78rem;color:var(--cream);letter-spacing:.03em}
+
+/* EXPERIENCE */
+.experience{background:var(--navy)}
+.exp-timeline{position:relative;padding-left:2rem}
+.exp-timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(180deg,var(--gold),rgba(201,168,76,.15))}
+.exp-item{position:relative;margin-bottom:3rem;padding-left:1.5rem}
+.exp-item::before{content:'';position:absolute;left:-2.35rem;top:.35rem;width:10px;height:10px;border-radius:50%;background:var(--gold);border:2px solid var(--navy);box-shadow:0 0 0 3px rgba(201,168,76,.2)}
+.exp-period{font-family:'DM Mono',monospace;font-size:.72rem;color:var(--gold);letter-spacing:.1em;margin-bottom:.3rem}
+.exp-title{font-size:1.08rem;font-weight:600;color:var(--white);margin-bottom:.15rem}
+.exp-company{font-size:.85rem;color:var(--muted);margin-bottom:.9rem}
+.exp-bullets{list-style:none;display:flex;flex-direction:column;gap:.45rem}
+.exp-bullets li{font-size:.85rem;color:rgba(245,240,232,.72);line-height:1.65;padding-left:1rem;position:relative}
+.exp-bullets li::before{content:'▸';position:absolute;left:0;color:var(--gold);font-size:.65rem;top:.15rem}
+
+/* ACHIEVEMENTS */
+.achievements{background:var(--deep)}
+.ach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem}
+.ach-card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:1.5rem 1.3rem;transition:border-color .2s,transform .2s}
+.ach-card:hover{border-color:rgba(201,168,76,.5);transform:translateY(-3px)}
+.ach-icon{width:36px;height:36px;background:rgba(201,168,76,.1);border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:.9rem}
+.ach-icon svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ach-title{font-size:.88rem;font-weight:600;color:var(--white);margin-bottom:.4rem}
+.ach-desc{font-size:.8rem;color:var(--muted);line-height:1.6}
+
+/* EDUCATION */
+.education{background:var(--navy)}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.edu-card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:1.5rem}
+.edu-year{font-family:'DM Mono',monospace;font-size:.72rem;color:var(--gold);letter-spacing:.1em;margin-bottom:.4rem}
+.edu-degree{font-size:.98rem;font-weight:600;color:var(--white);margin-bottom:.25rem}
+.edu-inst{font-size:.82rem;color:var(--muted)}
+
+/* FOOTER */
+footer{background:var(--card-bg);border-top:1px solid var(--border);padding:2.5rem 4rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--gold)}
+.footer-note{font-size:.78rem;color:var(--muted)}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav{padding:1rem 1.5rem}
+  .nav-links{display:none}
+  .hero{grid-template-columns:1fr;padding:6rem 1.5rem 3rem}
+  .hero-stats{grid-template-columns:1fr 1fr}
+  section{padding:3.5rem 1.5rem}
+  .about-grid,.edu-grid{grid-template-columns:1fr}
+  footer{padding:2rem 1.5rem;flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">GE</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-glow"></div>
+  <div class="hero-line"></div>
+  <div class="hero-left">
+    <p class="hero-eyebrow">Retail Leadership · Operations · Sales Strategy</p>
+    <h1 class="hero-name">Gunasekar <span>E.</span></h1>
+    <p class="hero-role">Department Manager &nbsp;·&nbsp; IBO Avadi, EBO MART &nbsp;·&nbsp; Chennai</p>
+    <p class="hero-summary">Experienced retail leader with 9+ years driving store operations, team performance, and sales growth across large-format retail and B2B environments. Combines operational discipline with Python-backed data insight.</p>
+    <div class="hero-cta-row">
+      <a href="mailto:Gunahacker7@gmail.com" class="btn-gold">Get In Touch</a>
+      <a href="#experience" class="btn-outline">View Experience</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-card">
+      <div class="stat-num">9+</div>
+      <div class="stat-label">Years Experience</div>
+      <div class="stat-desc">Retail, B2B &amp; Operations</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">11</div>
+      <div class="stat-label">Team Members</div>
+      <div class="stat-desc">Led &amp; mentored directly</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">99%</div>
+      <div class="stat-label">Billing Accuracy</div>
+      <div class="stat-desc">High-volume POS operations</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Companies</div>
+      <div class="stat-desc">Across retail &amp; manufacturing</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <p class="section-eyebrow">About Me</p>
+  <h2 class="section-title">Retail Leader with a Technical Edge</h2>
+  <div class="section-rule"></div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I'm a results-driven Department Manager based in Chennai, specialising in retail store operations, team leadership, and sales performance management. With over nine years across IBO Avadi, Whirlpool India, Reliance Fresh, and TVS Sundaram Industries, I've built a track record of exceeding targets, streamlining processes, and developing high-performing teams.</p>
+      <p>What sets me apart is my ability to bridge hands-on retail leadership with technical skills — including Python scripting and data analysis — to drive operational decisions with clarity and speed. I'm currently seeking Store Manager, Showroom Manager, or Area Operations Manager opportunities across Chennai and Tamil Nadu.</p>
+      <ul class="contact-list">
+        <li>
+          <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 10.8 19.79 19.79 0 01.87 2.18 2 2 0 012.86 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg></div>
+          <span>+91 9884776652</span>
+        </li>
+        <li>
+          <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <span>Gunahacker7@gmail.com</span>
+        </li>
+        <li>
+          <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <span>Kolathur, Chennai — 600099</span>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <p class="section-eyebrow" style="margin-bottom:1rem">Core Competencies</p>
+      <div class="skills-grid">
+        <div class="skill-pill">Store Operations</div>
+        <div class="skill-pill">Team Leadership</div>
+        <div class="skill-pill">Sales KPI Tracking</div>
+        <div class="skill-pill">POS Systems</div>
+        <div class="skill-pill">Inventory Management</div>
+        <div class="skill-pill">Staff Training</div>
+        <div class="skill-pill">Contractor Outreach</div>
+        <div class="skill-pill">Cash Reconciliation</div>
+        <div class="skill-pill">Python (Basic)</div>
+        <div class="skill-pill">MS Office Suite</div>
+        <div class="skill-pill">System Troubleshooting</div>
+        <div class="skill-pill">SOP Compliance</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience" id="experience">
+  <p class="section-eyebrow">Career History</p>
+  <h2 class="section-title">Work Experience</h2>
+  <div class="section-rule"></div>
+  <div class="exp-timeline">
+
+    <div class="exp-item">
+      <div class="exp-period">Feb 2026 — Present</div>
+      <div class="exp-title">Department Manager</div>
+      <div class="exp-company">IBO EBOMART &nbsp;|&nbsp; Chennai, Tamil Nadu &nbsp;|&nbsp; Store Code: ST056</div>
+      <ul class="exp-bullets">
+        <li>Lead departmental operations and oversee mission-critical updates for point-of-sale (POS) systems.</li>
+        <li>Manage professional onboarding and store-level execution within the Chennai region.</li>
+        <li>Drive departmental performance through strategic planning and team leadership in a large-scale retail environment.</li>
+        <li>Track daily/weekly KPIs — Footfall, Conversion Rate, NOB, AOV — against WTD/MTD targets.</li>
+        <li>Coordinate contractor outreach via JustDial and WhatsApp campaigns to drive B2B pipeline.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-period">2016 — 2026</div>
+      <div class="exp-title">Retail Sales Executive</div>
+      <div class="exp-company">Whirlpool India Pvt Ltd &nbsp;|&nbsp; Chennai, Tamil Nadu</div>
+      <ul class="exp-bullets">
+        <li>Exceeded quarterly sales targets by 100% through effective customer relationship management.</li>
+        <li>Implemented sales strategies resulting in consistent year-over-year revenue growth.</li>
+        <li>Stayed current with industry trends to provide optimal product solutions to customers.</li>
+        <li>Collaborated with cross-functional teams to improve product positioning and sales approaches.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-period">2015 — 2016</div>
+      <div class="exp-title">Billing Operator</div>
+      <div class="exp-company">Reliance Fresh &nbsp;|&nbsp; Chennai, Tamil Nadu</div>
+      <ul class="exp-bullets">
+        <li>Processed 75+ customer transactions daily with 99% accuracy across high-volume POS operations.</li>
+        <li>Reviewed purchase orders and sales records to determine customer payments accurately.</li>
+        <li>Prepared and distributed invoices on schedule; maintained accurate billing records.</li>
+        <li>Resolved payment discrepancies quickly, maintaining customer trust and operational compliance.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item" style="margin-bottom:0">
+      <div class="exp-period">2014 — 2015</div>
+      <div class="exp-title">Quality Control Inspector</div>
+      <div class="exp-company">TVS Sundaram Industries &nbsp;|&nbsp; Chennai, Tamil Nadu</div>
+      <ul class="exp-bullets">
+        <li>Inspected 150 products daily against quality specifications, identifying and escalating defects.</li>
+        <li>Conducted quality tests and documented results, recommending process improvements.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="achievements" id="achievements">
+  <p class="section-eyebrow">Track Record</p>
+  <h2 class="section-title">Key Achievements</h2>
+  <div class="section-rule"></div>
+  <div class="ach-grid">
+    <div class="ach-card">
+      <div class="ach-icon">
+        <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+      </div>
+      <div class="ach-title">100% Sales Target Achievement</div>
+      <div class="ach-desc">Exceeded quarterly targets through structured CRM, effective demos, and consistent follow-through at Whirlpool India.</div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <div class="ach-title">11-Member Team Leadership</div>
+      <div class="ach-desc">Built and managed a high-performing retail team with structured scheduling, daily KPI monitoring, and targeted coaching.</div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </div>
+      <div class="ach-title">POS System Overhaul</div>
+      <div class="ach-desc">Led mission-critical POS system updates at IBO Avadi, ensuring zero downtime and seamless transition for the store team.</div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">
+        <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+      </div>
+      <div class="ach-title">99% Billing Accuracy</div>
+      <div class="ach-desc">Maintained near-perfect transaction accuracy while handling 75+ daily POS transactions at Reliance Fresh.</div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div class="ach-title">9+ Years Continuous Growth</div>
+      <div class="ach-desc">Progressed from QC Inspector to Department Manager — spanning manufacturing, FMCG, and large-format retail.</div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">
+        <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <div class="ach-title">Python & Data Analysis</div>
+      <div class="ach-desc">Applied Python scripting and data analysis skills to retail reporting and operational decision-making.</div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="education" id="education">
+  <p class="section-eyebrow">Academic Background</p>
+  <h2 class="section-title">Education</h2>
+  <div class="section-rule"></div>
+  <div class="edu-grid">
+    <div class="edu-card">
+      <div class="edu-year">2011 — 2014</div>
+      <div class="edu-degree">Diploma in Polymer Technology</div>
+      <div class="edu-inst">Institute of Chemical Technology, Chennai</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-year">2010 — 2011</div>
+      <div class="edu-degree">SSLC</div>
+      <div class="edu-inst">Kings Matriculation Hr. Sec. School, Chennai</div>
+    </div>
+  </div>
+
+  <div style="margin-top:3rem">
+    <p class="section-eyebrow" style="margin-bottom:1rem">Technical Skills</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem">
+      <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:1.2rem">
+        <div style="font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:.5rem">Retail Management</div>
+        <div style="font-size:.85rem;color:rgba(245,240,232,.75);line-height:1.7">Departmental Leadership · POS Systems · Inventory Management · KPI Tracking</div>
+      </div>
+      <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:1.2rem">
+        <div style="font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:.5rem">Software & Programming</div>
+        <div style="font-size:.85rem;color:rgba(245,240,232,.75);line-height:1.7">MS Office Suite · Python (Basic scripting, data analysis) · Excel Dashboards</div>
+      </div>
+      <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:1.2rem">
+        <div style="font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:.5rem">Hardware & Systems</div>
+        <div style="font-size:.85rem;color:rgba(245,240,232,.75);line-height:1.7">System Troubleshooting · Hardware Administration · Technical Support</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FOOTER -->
+<footer id="contact">
+  <div>
+    <div class="footer-logo">Gunasekar E</div>
+    <div class="footer-note" style="margin-top:.4rem">Department Manager · Avadi, Chennai</div>
+  </div>
+  <div style="display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center">
+    <a href="tel:+919884776652" style="font-size:.82rem;color:var(--muted);transition:color .2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--muted)'">+91 9884776652</a>
+    <a href="mailto:Gunahacker7@gmail.com" style="font-size:.82rem;color:var(--muted);transition:color .2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--muted)'">Gunahacker7@gmail.com</a>
+    <a href="https://www.linkedin.com/in/gunahacker7" target="_blank" style="display:inline-flex;align-items:center;gap:.5rem;font-size:.82rem;color:var(--muted);border:1px solid var(--border);border-radius:4px;padding:.35rem .75rem;transition:color .2s,border-color .2s" onmouseover="this.style.color='var(--gold)';this.style.borderColor='var(--gold)'" onmouseout="this.style.color='var(--muted)';this.style.borderColor='var(--border)'"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>linkedin.com/in/gunahacker7</a>
+  </div>
+  <div class="footer-note">© 2026 Gunasekar E. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
