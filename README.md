@@ -53,7 +53,6 @@ Let's collaborate or discuss opportunities in Store Management, Showroom Leaders
 
 *   🌐 **Portfolio Website:** [gunahacker.netlify.app](https://gunahacker.netlify.app)
 *   💼 **LinkedIn:** [linkedin.com/in/gunahacker7](https://linkedin.com/in/gunahacker7)
-*   📧 **Email:** gunahacker7@gmail.com
 *   🐙 **GitHub:** [github.com/gunahacker7](https://github.com/gunahacker7)
 
 ---
