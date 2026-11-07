@@ -2,7 +2,7 @@
 
 ### Retail Operations Leader | Tech-Savvy Manager | Data-Driven Decision Maker
 
-I am a results-driven **Retail Operations & Store Management Professional** with over 8 years of progressive experience leading teams, optimizing store operations, and smashing sales targets. Currently, I manage a high-volume department at **IBO Avadi (Reliance Retail)**, overseeing an 11-member team and leveraging data analytics to drive footfall, conversion, and revenue.
+I am a results-driven **Retail Operations & Store Management Professional** with over 8 years of progressive experience leading teams, optimizing store operations, and smashing sales targets. Currently, I am **Store Manager at the Duroflex Experience Centre, Chennai**. Previously Department Manager at IBO, Chennai, where I led an 11-member team and leveraged data analytics to drive footfall, conversion, and revenue.
 
 What sets me apart is my ability to bridge the gap between traditional retail operations and modern digital tools—using data, automation, and tech workflows to streamline B2B outreach and business reporting.
 
@@ -23,7 +23,7 @@ What sets me apart is my ability to bridge the gap between traditional retail op
 
 ### 📈 Career Highlights & Key Accomplishments
 
-*   **Team Leadership:** Built and currently manage an 11-member high-performing retail sales team at IBO Avadi, implementing structured scheduling and metric-driven KPI tracking.
+*   **Team Leadership:** Led an 11-member high-performing retail sales team at IBO, implementing structured scheduling and metric-driven KPI tracking.
 *   **B2B Innovation:** Developed a contractor engagement and B2B outreach infrastructure from scratch, implementing WhatsApp automation workflows and bulk contact sourcing.
 *   **Data Analytics:** Built Excel-based daily and weekly sales dashboards for real-time tracking, directly influencing store-level performance decisions.
 *   **Operational Excellence:** Maintained a **99% transaction accuracy** rate in high-volume billing operations during my tenure with Reliance Fresh.
@@ -33,8 +33,9 @@ What sets me apart is my ability to bridge the gap between traditional retail op
 
 ### 💼 Professional Experience Summary
 
-*   **Department Manager** | *IBO Avadi – Reliance Retail* (2016 – Present)
-*   **Retail Sales Executive** | *Whirlpool India Pvt. Ltd.* 
+*   **Store Manager** | *Duroflex Experience Centre, Chennai* (Aug 2026 – Present)
+*   **Department Manager** | *IBO – EBO MART, Chennai* (Feb 2026 – Jul 2026)
+*   **Retail Sales Executive** | *Whirlpool India Pvt. Ltd.* (2016 – 2026)
 *   **Billing Operator** | *Reliance Fresh*
 *   **Quality Control Inspector** | *TVS Sundaram Industries*
 
@@ -51,7 +52,7 @@ What sets me apart is my ability to bridge the gap between traditional retail op
 
 Let's collaborate or discuss opportunities in Store Management, Showroom Leadership, or Retail Operations Analytics!
 
-*   🌐 **Portfolio Website:** [gunahacker.netlify.app](https://gunahacker.netlify.app)
+*   🌐 **Portfolio Website:** [www.gunavk.in](https://www.gunavk.in)
 *   💼 **LinkedIn:** [linkedin.com/in/gunahacker7](https://linkedin.com/in/gunahacker7)
 *   🐙 **GitHub:** [github.com/gunahacker7](https://github.com/gunahacker7)
 
