@@ -1084,7 +1084,7 @@
           </div>
 
           <!-- Right Column: Vertical Burgundy Timeline with Diamond Nodes -->
-          <div class="lg:col-span-7 scroll-reveal">
+          <div class="lg:col-span-6 scroll-reveal">
             <div class="timeline-container">
               <!-- Role 1: Duroflex -->
               <div class="timeline-item">
@@ -1631,7 +1631,7 @@
             leftPct = lerp(27, 73, tToSkills);
             // Slightly soften opacity over Journey/Credentials so right-column text stays razor-sharp
             var inJourney = scrollY > (journeyTop - vh * 0.5);
-            opacity = inJourney ? 0.22 : lerp(0.38, 0.30, tToSkills);
+            opacity = inJourney ? 0.10 : lerp(0.38, 0.30, tToSkills);
           }
 
           portraitCarrier.style.left = leftPct.toFixed(2) + '%';
