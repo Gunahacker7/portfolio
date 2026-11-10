@@ -2,7 +2,7 @@
 
 ### Retail Operations Leader | Tech-Savvy Manager | Data-Driven Decision Maker
 
-I am a results-driven **Retail Operations & Store Management Professional** with over 8 years of progressive experience leading teams, optimizing store operations, and smashing sales targets. Currently, I am **Store Manager at the Duroflex Experience Centre, Chennai**. Previously Department Manager at IBO, Chennai, where I led an 11-member team and leveraged data analytics to drive footfall, conversion, and revenue.
+I am a results-driven **Retail Operations & Store Management Professional** with 12+ years of progressive experience leading teams, optimizing store operations, and smashing sales targets. Currently, I am **Store Manager at the Duroflex Experience Centre, Chennai**. Previously Department Manager at IBO, Chennai, where I led an 11-member team and leveraged data analytics to drive footfall, conversion, and revenue.
 
 What sets me apart is my ability to bridge the gap between traditional retail operations and modern digital tools—using data, automation, and tech workflows to streamline B2B outreach and business reporting.
 
@@ -35,7 +35,9 @@ What sets me apart is my ability to bridge the gap between traditional retail op
 
 *   **Store Manager** | *Duroflex Experience Centre, Chennai* (Aug 2026 – Present)
 *   **Department Manager** | *IBO – EBO MART, Chennai* (Feb 2026 – Jul 2026)
-*   **Retail Sales Executive** | *Whirlpool India Pvt. Ltd.* (2016 – 2026)
+*   **Retail Sales Executive** | *Whirlpool India Pvt. Ltd.* (~10 years)
+
+*   **Retail Sales Executive** | *Godrej & Boyce, Chennai* (Nov 2023 – Dec 2024)
 *   **Billing Operator** | *Reliance Fresh*
 *   **Quality Control Inspector** | *TVS Sundaram Industries*
 
@@ -54,7 +56,7 @@ Let's collaborate or discuss opportunities in Store Management, Showroom Leaders
 
 *   🌐 **Portfolio Website:** [www.gunavk.in](https://www.gunavk.in)
 *   💼 **LinkedIn:** [linkedin.com/in/gunahacker7](https://linkedin.com/in/gunahacker7)
-*   🐙 **GitHub:** [github.com/gunahacker7](https://github.com/gunahacker7)
+*   🐙 **GitHub:** [github.com/Gunahacker7](https://github.com/Gunahacker7)
 
 ---
 *“Leveraging operational leadership and hands-on retail management to drive growth in dynamic organizations.”*# portfolio
