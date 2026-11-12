@@ -36,8 +36,6 @@ What sets me apart is my ability to bridge the gap between traditional retail op
 *   **Store Manager** | *Duroflex Experience Centre, Chennai* (Aug 2026 – Present)
 *   **Department Manager** | *IBO – EBO MART, Chennai* (Feb 2026 – Jul 2026)
 *   **Retail Sales Executive** | *Whirlpool India Pvt. Ltd.* (~10 years)
-
-*   **Retail Sales Executive** | *Godrej & Boyce, Chennai* (Nov 2023 – Dec 2024)
 *   **Billing Operator** | *Reliance Fresh*
 *   **Quality Control Inspector** | *TVS Sundaram Industries*
 
